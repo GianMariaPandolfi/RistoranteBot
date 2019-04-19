@@ -1,0 +1,82 @@
+%YAML 1.1
+---
+actions:
+- utter_informazioni_apertura
+- utter_ringraziamenti
+- action_conferma_prenotazione
+- action_controllo_richiesta
+- utter_riepilogo_prenotazione
+- utter_saluto_finale
+- utter_chitchat
+- utter_saluto
+entities:
+- num_persone
+- orario
+- nome_prenotazione
+- giorno
+- numero
+forms:
+- prenotazione_form
+intents:
+- informazioni_apertura
+- saluto_finale
+- nega
+- richiesta_di_prenotazione
+- saluto
+- informa
+- ringraziamenti
+- afferma
+- chitchat:
+    use_entities: false
+slots:
+  conferma_prenotazione:
+    type: bool
+  giorno:
+    type: unfeaturized
+    auto_fill: false
+  nome_prenotazione:
+    type: unfeaturized
+  num_persone:
+    type: unfeaturized
+  orario:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+templates:
+  utter_ask_giorno:
+  - text: Per quale giorno voleva prenotare?
+  utter_ask_nome_prenotazione:
+  - text: A quale nome segno la prenotazione?
+  utter_ask_num_persone:
+  - text: Per quante persone voleva effettuare la prenotazione?
+  utter_ask_orario:
+  - text: A che ora?
+  utter_chitchat:
+  - text: chitchat
+  utter_saluto_finale:
+  - text: A presto.
+  utter_saluto:
+  - text: Ciao, come posso aiutarti?
+  utter_informazioni_apertura:
+  - text: siamo aperti dal martedi alla domenica, per pranzo 11:00-15:00, per cena
+      18:00-23:00.
+  utter_prenotazione_confermata:
+  - text: la sua prenotazione è confermata.
+  utter_prenotazione_non_confermata:
+  - text: la sua prenotazione non è stata confermata
+  utter_riepilogo_prenotazione:
+  - text: "Ecco la sua prenotazione:\n - giorno: {giorno}\n - orario: {orario}\n -\
+      \ numero persone: {num_persone}\n - nome: {nome_prenotazione}\n Desidera confermarla?"
+  utter_ringraziamenti:
+  - text: E' stato un piacere aiutarti.
+  utter_wrong_giorno:
+  - text: Non ho capito, potrebbe ridirmi il giorno?
+  utter_wrong_num_persone:
+  - text: Non ho capito, potrebbe ridirmi il numero di persone?
+  utter_wrong_orario:
+  - text: Non ho capito, potrebbe ridirmi l'orario?
+  utter_lunedi_chiuso:
+  - text: Il lunedì siamo chiusi 
+  utter_orario_chiuso:
+  - text: siamo chiusi a quell'ora
