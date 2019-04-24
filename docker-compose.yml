@@ -23,12 +23,17 @@ services:
     image: spacy_it:latest
     volumes:
       - ./models/rasa_nlu:/app/models
+      - ./config:/app/config
     command:
       - start
       - --path
       - models
+      - -c
+      - config/nlu_config.yml
 
   action_server:
-    image: rasa/rasa_core_sdk:latest
-    volumes:
-      - ./actions:/app/actions
+     image: rasa/rasa_core_sdk:latest
+     ports:
+      - 5055:5055
+     volumes:
+       - ./actions:/app/actions
