@@ -20,7 +20,7 @@ services:
       - current/
 
   rasa_nlu:
-    image: spacy_it:latest
+    image: giambo/spacy_it:latest
     volumes:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
