@@ -1,3 +1,4 @@
+﻿## intent:afferma
 - Si
 - Certamente
 - Certo
