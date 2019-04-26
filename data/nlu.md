@@ -15,6 +15,7 @@
 - si, va bene
 - sì, va benissimo
 - si, va benissimo
+- si
 
 ## intent:chitchat
 - come stai?
@@ -26,36 +27,8 @@
 - come ti chiami?
 - chi sei?
 
-## intent:saluto_finale
-- A presto
-- Arrivederci
-- a martedì
-- a mercoledì
-- a giovedì
-- a venerdì
-- a sabato
-- a domenica
-- ci vediamo lunedi
-- a stasera
-- addio
-- buona giornata
-- saluti
-- a presto
-- grazie, a presto
-
-## intent:saluto
-- Ciao
-- Buongiorno
-- Buonasera
-- Salve
-- Buon pomeriggio
-- Buon giorno
-- ciao
-- ei
-- ehi
-- buongiorno
-
 ## intent:informa
+- [domani](giorno)
 - [lunedi](giorno)
 - [martedi](giorno)
 - [mercoledi](giorno)
@@ -67,9 +40,6 @@
 - [4](num_persone) persone
 - alle [11](orario: 11)
 - verso le [nove](orario: 9)
-- [Luigi](nome_prenotazione:luigi)
-- segnami come [Rossi](nome_prenotazione)
-- segna a [Marco](nome_prenotazione:marco)
 - [mercoledì](giorno: mercoledi)
 - per [12](num_persone) persone
 - alle [15](orario)
@@ -100,7 +70,7 @@
 - [22](numero)
 - [23](numero)
 - [24](numero)
-- [vittorio](nome_prenotazione)
+- [domani](giorno)
 
 ## intent:informazioni_apertura
 - Volevo sapere se lunedì siete aperti
@@ -122,6 +92,7 @@
 - domani siete aperti?
 - Se vengo alle 10 siete ancora aperti?
 - quando aprite?
+- quando siete aperti?
 
 ## intent:nega
 - No
@@ -135,7 +106,7 @@
 - no
 
 ## intent:richiesta_di_prenotazione
-- vorrei effettuare una prenotazione per [domani](giorno) alle [20](orario) per [3](num_persone) a nome [Andrea](nome_prenotazione)
+- vorrei effettuare una prenotazione per [domani](giorno) alle [20](orario) per [3](num_persone)
 - volevo prenotare per [lunedi](giorno) alle [12](orario)
 - volevo prenotare per [martedi](giorno) alle [21](orario)
 - volevo sapere se c'è posto [giovedi](giorno) per pranzo
@@ -148,6 +119,7 @@
 - vorrei prenotare per [domani](giorno)
 - vorrei prenotare per [mercoledi](giorno) alle [12](orario)
 
+
 ## intent:ringraziamenti
 - grazie mille
 - grazie
@@ -156,6 +128,36 @@
 - grazie grazie
 - perfetto, grazie
 - grazie mille
+
+## intent:saluto
+- Ciao
+- Buongiorno
+- Buonasera
+- Salve
+- Buon pomeriggio
+- Buon giorno
+- ciao
+- ei
+- ehi
+- buongiorno
+
+
+## intent:saluto_finale
+- A presto
+- Arrivederci
+- a martedì
+- a mercoledì
+- a giovedì
+- a venerdì
+- a sabato
+- a domenica
+- ci vediamo lunedi
+- a stasera
+- addio
+- buona giornata
+- saluti
+- a presto
+- grazie, a presto
 
 ## synonym: 11
 - 11
@@ -172,14 +174,11 @@
 ## synonym: 9
 - nove
 
+## synonym: mercoledi
+- mercoledì
+
 ## synonym: oggi
 - stasera
 
 ## synonym:4
 - quattro
-
-## synonym:luigi
-- Luigi
-
-## synonym:marco
-- Marco

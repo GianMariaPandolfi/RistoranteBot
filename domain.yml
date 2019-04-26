@@ -1,46 +1,46 @@
-﻿%YAML 1.1
+%YAML 1.1
 ---
 actions:
+- utter_saluto_finale
+- utter_riepilogo_prenotazione
 - utter_informazioni_apertura
+- utter_saluto
+- action_controllo_richiesta
 - utter_ringraziamenti
 - action_conferma_prenotazione
-- action_controllo_richiesta
-- utter_riepilogo_prenotazione
-- utter_saluto_finale
 - utter_chitchat
-- utter_saluto
 entities:
-- num_persone
-- orario
-- nome_prenotazione
-- giorno
 - numero
+- num_persone
+- giorno
+- nome_prenotazione
+- orario
 forms:
 - prenotazione_form
 intents:
+- afferma
 - informazioni_apertura
 - saluto_finale
-- nega
 - richiesta_di_prenotazione
-- saluto
 - informa
+- saluto
+- nega
 - ringraziamenti
-- afferma
 - chitchat:
     use_entities: false
 slots:
   conferma_prenotazione:
     type: bool
   giorno:
-    type: unfeaturized
     auto_fill: false
+    type: unfeaturized
   nome_prenotazione:
     type: unfeaturized
   num_persone:
     type: unfeaturized
   orario:
-    type: unfeaturized
     auto_fill: false
+    type: unfeaturized
   requested_slot:
     type: unfeaturized
 templates:
@@ -54,13 +54,13 @@ templates:
   - text: A che ora?
   utter_chitchat:
   - text: chitchat
-  utter_saluto_finale:
-  - text: A presto.
-  utter_saluto:
-  - text: Ciao, come posso aiutarti?
   utter_informazioni_apertura:
   - text: siamo aperti dal martedi alla domenica, per pranzo 11:00-15:00, per cena
       18:00-23:00.
+  utter_lunedi_chiuso:
+  - text: Il lunedì siamo chiusi
+  utter_orario_chiuso:
+  - text: siamo chiusi a quell'ora
   utter_prenotazione_confermata:
   - text: la sua prenotazione è confermata.
   utter_prenotazione_non_confermata:
@@ -70,13 +70,13 @@ templates:
       \ numero persone: {num_persone}\n Desidera confermarla?"
   utter_ringraziamenti:
   - text: E' stato un piacere aiutarti.
+  utter_saluto:
+  - text: Ciao, come posso aiutarti?
+  utter_saluto_finale:
+  - text: A presto.
   utter_wrong_giorno:
   - text: Non ho capito, potrebbe ridirmi il giorno?
   utter_wrong_num_persone:
   - text: Non ho capito, potrebbe ridirmi il numero di persone?
   utter_wrong_orario:
   - text: Non ho capito, potrebbe ridirmi l'orario?
-  utter_lunedi_chiuso:
-  - text: Il lunedì siamo chiusi 
-  utter_orario_chiuso:
-  - text: siamo chiusi a quell'ora
