@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
   rasa_core:
-    image: rasa/rasa_core:latest
+    image: rasa/rasa_core:stable
     ports:
       - 5005:5005
     volumes:
