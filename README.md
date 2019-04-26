@@ -19,7 +19,7 @@ After the training you can start the bot running:
 docker-compose up
 ```
 
-This will start the bot and install all the requirements (I'll try to reduce them in future).
+This will start the bot and install all the requirements.
 
 To send message to the bot:
 
