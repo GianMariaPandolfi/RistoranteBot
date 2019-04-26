@@ -11,7 +11,7 @@ This will train the NLU model
 To train the core model, please run: 
 
 ```
-docker run -v ${pwd}:/app/project -v ${pwd}/models:/app/models rasa/rasa_core:latest train --domain project/domain.yml --stories project/data/stories.md --out models/rasa_core
+docker run -v ${pwd}:/app/project -v ${pwd}/models:/app/models rasa/rasa_core:stable train --domain project/domain.yml --stories project/data/stories.md --out models/rasa_core
 ```
 After the training you can start the bot running:
 
@@ -31,7 +31,8 @@ curl --request POST \
     "message": "ciao"
   }'
 ```
-The chatbot should then answer something like:
+The bot is not ready to understand everything,
+but it should be ready to understand a typical conversation like this:
 
 ```
 [
@@ -77,5 +78,9 @@ A typical conversation it's like:
 
 - si
                  la sua prenotazione è confermata.
+ 
+- grazie, a presto
+
+                  A presto.
  
 ```                
