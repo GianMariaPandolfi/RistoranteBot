@@ -31,8 +31,8 @@ curl --request POST \
     "message": "ciao"
   }'
 ```
-The bot is not ready to understand everything,
-but it should be ready to understand a typical conversation like this:
+
+The chatbot should then answer something like:
 
 ```
 [
@@ -45,7 +45,8 @@ but it should be ready to understand a typical conversation like this:
 
 If the chatbot cannot understand you, the answer is []
 
-A typical conversation it's like:
+The bot is not ready to understand everything,
+but it should be ready to understand a typical conversation like this:
 
 ```
 - Ciao
