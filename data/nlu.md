@@ -1,4 +1,3 @@
-## intent:afferma
 - Si
 - Certamente
 - Certo
@@ -41,6 +40,7 @@
 - buona giornata
 - saluti
 - a presto
+- grazie, a presto
 
 ## intent:saluto
 - Ciao

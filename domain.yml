@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 ---
 actions:
 - utter_informazioni_apertura
@@ -67,7 +67,7 @@ templates:
   - text: la sua prenotazione non è stata confermata
   utter_riepilogo_prenotazione:
   - text: "Ecco la sua prenotazione:\n - giorno: {giorno}\n - orario: {orario}\n -\
-      \ numero persone: {num_persone}\n - nome: {nome_prenotazione}\n Desidera confermarla?"
+      \ numero persone: {num_persone}\n Desidera confermarla?"
   utter_ringraziamenti:
   - text: E' stato un piacere aiutarti.
   utter_wrong_giorno:
